@@ -58,17 +58,14 @@ header{
 header span{
   color: var(--gray-3);
   font-weight: var(--font-weight-heavy);
-  padding: 1.5px ;
+  padding: var(--spacer-1);
 }
 .logo{
   display: flex;
   align-items: center;
   grid-gap: var(--spacer-3);
 }
-.logo img{
-  width: 33px;
-  height: 33px;
-}
+
 nav ul{
   display: flex;
   grid-gap: var(--spacer-5);
@@ -79,7 +76,7 @@ nav a{
 
 }
 nav li{
-  transition: all .3s ease-in-out;
+  transition: all 0.1s ease-in-out;
   padding: 1.5px ;
 }
 nav li.active, nav li:hover{
@@ -96,13 +93,12 @@ h2{
   font-size: var(--font-size-2);
   font-weight: var(--font-weight-bold);
   color: var(--gray-1);
-  padding: 0 0 var(--spacer-1) 0;
 }
 p{
   font-size: var(--font-size-3);
   font-weight: var(--font-weight-thin);
   color: var(--gray-0);
-  padding: var(--spacer-2) 0;
+  padding: var(--spacer-3) 0 0 0;
 }
 article{
   padding: var(--spacer-3) var(--spacer-3);
@@ -110,4 +106,18 @@ article{
   box-shadow: var(--shadows);
   border: 1px solid var(--gray-2);
   border-radius: 4px;
+}
+article a{
+  background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-bold);
+    grid-gap: var(--spacer-2);
+    padding: var(--spacer-2);
+    margin-top: var(--spacer-4);
+}
+article a:hover{
+  background-color: var(--secondary);
 }
